@@ -54,7 +54,7 @@ def getText():
 if __name__ == '__main__':
     Model = whisper.load_model("tiny.en", in_memory=True)
 
-    app.run(host='0.0.0.0', port=5000)  # Allow external access
+    app.run(host='0.0.0.0', port=5001)  # Allow external access
 
     
 
