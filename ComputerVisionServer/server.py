@@ -32,10 +32,10 @@ def sendImage():
     file_bytes = file.read()  # Read once
 
     # Save the image safely with a unique name
-    unique_filename = f"{datetime.now().strftime('%Y%m%d_%H%M%S')}.jpg"
-    filepath = os.path.join(SAVE_DIR, unique_filename)
-    with open(filepath, 'wb') as f_out:
-        f_out.write(file_bytes)
+    #unique_filename = f"{datetime.now().strftime('%Y%m%d_%H%M%S')}.jpg"
+    #filepath = os.path.join(SAVE_DIR, unique_filename)
+    #with open(filepath, 'wb') as f_out:
+    #    f_out.write(file_bytes)
 
     # Convert to OpenCV format without reusing the file stream
     image_np = np.frombuffer(file_bytes, np.uint8)
