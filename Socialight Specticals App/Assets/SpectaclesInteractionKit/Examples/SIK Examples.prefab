@@ -8,7 +8,7 @@
   PrefabRemaps:
     []
   Name: "[EXAMPLES] Simple Interaction"
-  Enabled: false
+  Enabled: true
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -4745,7 +4745,7 @@
   PrefabRemaps:
     []
   Name: "[EXAMPLE] Rocket Workshop"
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -9051,8 +9051,8 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 65.821396, y: 27.248711, z: 25.771273}
+    position: {x: -0.771204, y: 0.092968, z: -0.573624}
+    rotation: {x: 65.821404, y: 27.248709, z: 25.771282}
     scale: {x: 0.222222, y: 0.222222, z: 0.222222}
     hasSegmentScaleCompensation: false
   Children:

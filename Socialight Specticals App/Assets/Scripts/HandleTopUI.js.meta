@@ -1,0 +1,39 @@
+- !<AssetImportMetadata/6df4e664-5291-4b5a-b0b3-ed19a389b251>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 65153980-b30b-4d69-bd19-4dc20c288f78
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 65153980-b30b-4d69-bd19-4dc20c288f78
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> 4117c177-94c0-4641-bd1c-c907ff9dac36
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/4117c177-94c0-4641-bd1c-c907ff9dac36>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: ea35b0af-00af-4805-b609-7a5fc847aa2c
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    emotionEmoji: false
+    topicTxt: false
+  ScriptTypesHidden:
+    {}
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - emotionEmoji: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      topicTxt: !<reference.Text> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}

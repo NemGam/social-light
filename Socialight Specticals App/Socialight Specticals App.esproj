@@ -17,23 +17,25 @@ viewConfig:
     viewport: Maximized
     output: Live
     stereoOutputEye: Center
-    deviceTypeOverride: Spectacles
+    deviceTypeOverride: Unknown
   cameraType: Front
 metaInfo:
   hints:
     []
   tags:
     []
-  lensName: Specs Starter
+  lensName: Pixel Bulb
   lensDescriptors:
-    []
+    - EXPERIMENTAL_API
   lensApplicability:
     - Front
     - Back
   lensClientCompatibilities:
+    - Web
     - Spectacles
+    - CameraKit
   platformBundlesEnabled: false
-  iconHash: ""
+  iconHash: 83076276e830b05d6207773ae1522f9b
   videoPreviewHash: ""
   fromTemplateName: Spectacles
   fromTemplateUrl: Lens Studio 5.7.2.25030805
