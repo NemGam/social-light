@@ -1,9 +1,19 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 578
+    size: 589
     values:
+      - Easy Lens
+      - Easy Lens/Generated Assets
+      - Easy Lens/Generated Assets/Simple_Light_Bulb_Pixel_Art.png
+      - Easy Lens/Lens Components
+      - Easy Lens/Lens Components/Screen_Sticker.lsc
+      - Easy Lens/LensController.js
       - Echopark.hdr
+      - Scripts/HandleBottomUI.js
+      - Scripts/HandleTopUI.js
+      - Scripts/JSON-reciever.js
+      - SpectaclesInteractionKit
       - SpectaclesInteractionKit/Assets
       - SpectaclesInteractionKit/Assets/Audio
       - SpectaclesInteractionKit/Assets/Audio/HoverAudioTrack.wav
@@ -581,4 +591,5 @@ CollapsedEntities:
       - SpectaclesInteractionKit/Utils/views/MeshView.ts
       - SpectaclesInteractionKit/Utils/views/View.ts
       - SpectaclesInteractionKit/package.native
+      - VoiceML Module.voiceMLModule
   options: 4
