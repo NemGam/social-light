@@ -50,10 +50,12 @@ def sendImage():
 
         # if(age is None or emotion is None):
         #     raise Exception(f"Age is {age}, Emotion is {emotion}")
+        if (age is not None):
+            Age = age
         
-        Age = age
-        Emotion = emotion
-        
+        if (emotion is not None):
+            Emotion = emotion
+        print(Emotion, age)
         # Returning nothing back
         return {"status": "success"},  200
         
@@ -69,6 +71,7 @@ def getData():
         #     raise Exception(f"Age or Emotion is None. Age is {Age}, Emotion is {Emotion}")
         
         response = {"Emotion":Emotion, "Age":Age}
+        
         return jsonify(response),  200
 
     except Exception as e:
