@@ -2,8 +2,6 @@ import express, { json } from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import axios from 'axios';
-import fs from 'fs';
-import FormData from 'form-data';
 import { getOptions } from './src/gemini-controller';
 dotenv.config();
 
@@ -24,9 +22,12 @@ app.use(json());
 
 //Get next dialogue options based on opponent's emotions and recent talk
 app.post('/dialogue', async (req, res, next) => {
-    const speech = req.body;
-
-    if (!speech) {
+    const speech = req.body['text'];
+    
+    console.log(typeof(speech), speech);
+    
+    if (!speech || typeof(speech) != 'string' || speech.length == 0) {
+        console.error('speech is required');
         res.status(400).json({ error: 'speech is required' });
         return;
     }
@@ -36,6 +37,7 @@ app.post('/dialogue', async (req, res, next) => {
         const { Age: age, Emotion: emotion } = emotionServerResponse.data;
         //Send everything to Gemini
         const reply = await getOptions(emotion, age, speech);
+        console.log(reply);
         res.status(200).json(reply);
         return;
     } catch (err) {
@@ -52,6 +54,6 @@ app.use((err, req, res, next) => {
     return;
 });
 
-app.listen(3000, '127.0.0.1', () => {
-    console.log('Server running on http://localhost:3000');
+app.listen(3000, '172.24.9.249', () => {
+    console.log('Server running on http://172.24.9.249:3000');
 });

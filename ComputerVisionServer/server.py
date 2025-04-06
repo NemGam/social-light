@@ -48,8 +48,8 @@ def sendImage():
         # Image processing launched here
         age, emotion = ia.getData(image)
 
-        if(age is None or emotion is None):
-            raise Exception(f"Age is {age}, Emotion is {emotion}")
+        # if(age is None or emotion is None):
+        #     raise Exception(f"Age is {age}, Emotion is {emotion}")
         
         Age = age
         Emotion = emotion
@@ -65,8 +65,8 @@ def sendImage():
 @app.route('/getData', methods=['GET'])
 def getData():
     try:
-        if(Age is None or Emotion is None):
-            raise Exception(f"Age or Emotion is None. Age is {Age}, Emotion is {Emotion}")
+        # if(Age is None or Emotion is None):
+        #     raise Exception(f"Age or Emotion is None. Age is {Age}, Emotion is {Emotion}")
         
         response = {"Emotion":Emotion, "Age":Age}
         return jsonify(response),  200
@@ -76,6 +76,6 @@ def getData():
         return "Error when packing the data", 500
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)  # Allow external access
+    app.run(host='172.24.9.249', port=5000)  # Allow external access
 
 
